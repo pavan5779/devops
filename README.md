@@ -1,2 +1,2 @@
 # Devops
-This is first repository.
+This is the first repository.
