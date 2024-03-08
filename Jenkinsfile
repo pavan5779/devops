@@ -8,6 +8,7 @@ pipeline {
                 sh 'mvn compile' 
             }
         }
+        // here we will compile the code 
         stage('Test') {
             steps {
                 echo 'Testing...'
