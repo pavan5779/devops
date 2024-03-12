@@ -8,7 +8,7 @@ pipeline {
                 sh 'mvn compile' 
             }
         }
-        // here we will compile the code 
+        // Testing stage runs unit tests
         stage('Test') {
             steps {
                 echo 'Testing...'
@@ -25,6 +25,7 @@ pipeline {
     post {
         failure {
             echo 'One or more stages failed, but pipeline will continue...'
+            // You can add additional actions here, such as sending notifications or performing cleanup tasks.
         }
     }
 }
